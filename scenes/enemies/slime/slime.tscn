@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://be200ggif6v10"]
+
+[ext_resource type="Script" uid="uid://bch4jut3uqe13" path="res://scenes/enemies/slime/slime.gd" id="1_slime"]
+[ext_resource type="PackedScene" uid="uid://csmmpv7arfkvp" path="res://scenes/enemies/enemy.tscn" id="2_enemy"]
+
+[node name="Slime" unique_id=21884694 instance=ExtResource("2_enemy")]
+script = ExtResource("1_slime")
+
+[node name="Sprite2D" parent="." index="0" unique_id=10889893]
+modulate = Color(1.3380349e-05, 0.8866874, 0.32005534, 1)
+scale = Vector2(0.60937494, 0.609375)
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=33436172]
+scale = Vector2(3.84, 3.84)

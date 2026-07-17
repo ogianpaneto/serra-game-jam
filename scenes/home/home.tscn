@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cyck8sml82dou" path="res://scenes/home/home.gd" id="1_5q1ba"]
 [ext_resource type="PackedScene" uid="uid://dkdv0ilc5dgw4" path="res://scenes/player/player.tscn" id="2_ng36q"]
 [ext_resource type="Texture2D" uid="uid://cwxrtwqui0x8b" path="res://icon.svg" id="3_uqaih"]
+[ext_resource type="PackedScene" path="res://scenes/enemies/slime/slime.tscn" id="4_vut6t"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_xc6un"]
 
@@ -16,8 +17,10 @@ script = ExtResource("1_5q1ba")
 layer = -1
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1523596798]
-offset_right = 1155.0
-offset_bottom = 652.0
+offset_left = -130.0
+offset_top = -58.0
+offset_right = 1988.6809
+offset_bottom = 1138.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=842982064]
 position = Vector2(235, 151)
@@ -32,3 +35,5 @@ shape = SubResource("RectangleShape2D_q74ag")
 
 [node name="Player" parent="." unique_id=933655948 instance=ExtResource("2_ng36q")]
 position = Vector2(578, 317)
+
+[node name="Slime" parent="." unique_id=448661205 instance=ExtResource("4_vut6t")]

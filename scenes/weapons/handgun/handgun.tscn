@@ -1,8 +1,17 @@
 [gd_scene format=3 uid="uid://r2e0my4t86ry"]
 
-[ext_resource type="Texture2D" uid="uid://d10jlqioi40uv" path="res://assets/weapons/handgun.png" id="1_hnbr4"]
+[ext_resource type="Script" uid="uid://cc4teynvb6rrv" path="res://scenes/weapons/handgun/handgun.gd" id="1_dnm0i"]
+[ext_resource type="PackedScene" uid="uid://d1c4o28nwp8f3" path="res://scenes/weapons/weapon.tscn" id="1_hnbr4"]
+[ext_resource type="Texture2D" uid="uid://d10jlqioi40uv" path="res://assets/weapons/handgun.png" id="3_mc4o6"]
 
-[node name="Handgun" type="Node2D" unique_id=1063920413]
+[node name="Weapon" unique_id=1313693316 instance=ExtResource("1_hnbr4")]
+script = ExtResource("1_dnm0i")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1002042697]
-texture = ExtResource("1_hnbr4")
+[node name="Sprite2D" parent="." index="0" unique_id=1820817015]
+texture_filter = 1
+position = Vector2(19, -14)
+scale = Vector2(2.5714285, 2.5714285)
+texture = ExtResource("3_mc4o6")
+
+[node name="Muzzle" parent="." index="1" unique_id=69540090]
+position = Vector2(30, -15)

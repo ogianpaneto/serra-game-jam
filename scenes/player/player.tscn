@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cauvhk75jmayo" path="res://assets/player/16x16 Run.png" id="3_lvxji"]
 [ext_resource type="Texture2D" uid="uid://cpnc8y3fsqn3q" path="res://assets/player/16x16 Idle up.png" id="3_p47bc"]
 [ext_resource type="Texture2D" uid="uid://bs05u4ky1rltu" path="res://assets/player/16x16 Run up.png" id="5_75vfm"]
+[ext_resource type="PackedScene" uid="uid://r2e0my4t86ry" path="res://scenes/weapons/handgun/handgun.tscn" id="6_hndg1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p47bc"]
 atlas = ExtResource("2_gmlin")
@@ -191,5 +192,10 @@ position = Vector2(-1.25, 19.75)
 shape = SubResource("RectangleShape2D_xc6un")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=620720042]
+
+[node name="WeaponHolder" type="Node2D" parent="." unique_id=187261745]
+position = Vector2(-1, 19)
+
+[node name="Handgun" parent="WeaponHolder" unique_id=821395720 instance=ExtResource("6_hndg1")]
 
 [connection signal="timeout" from="DodgeTimer" to="." method="_on_dodge_timer_timeout"]

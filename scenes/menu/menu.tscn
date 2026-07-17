@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://1c5xvn0ugos3"]
+
+[node name="Menu" type="Node2D" unique_id=1755771879]
+
+[node name="Title" type="Label" parent="." unique_id=1723720129]
+offset_right = 160.0
+offset_bottom = 92.0
+text = "a"

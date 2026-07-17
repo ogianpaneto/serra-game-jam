@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var dodge_speed = 1500
 @export var dodge_cooldown = 0.5
 
+@onready var weapon: Weapon = $WeaponHolder/Handgun
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var dodge_timer = $DodgeTimer
 @onready var dodge_cooldown_timer = Timer.new()
@@ -45,6 +46,12 @@ func _physics_process(delta: float) -> void:
 		velocity  = direction * speed
 	
 	move_and_slide()
+
+func _process(_delta: float) -> void:
+	weapon.look_at(get_global_mouse_position())
+	
+	if Input.is_action_pressed("atack"):
+		weapon.fire()
 	
 func dodge(direction):
 	is_invulnerable = true
