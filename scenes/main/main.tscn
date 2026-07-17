@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dr7b114qpp2rn"]
+
+[ext_resource type="PackedScene" uid="uid://dkdv0ilc5dgw4" path="res://scenes/player/player.tscn" id="1_hyk8p"]
+
+[node name="Main" type="Node2D" unique_id=271096584]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1057984258]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1866846246]
+offset_right = 1155.0
+offset_bottom = 652.0
+
+[node name="Player" parent="." unique_id=933655948 instance=ExtResource("1_hyk8p")]
+position = Vector2(582, 328)

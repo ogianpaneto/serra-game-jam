@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://r2e0my4t86ry"]
+
+[ext_resource type="Texture2D" uid="uid://d10jlqioi40uv" path="res://assets/weapons/handgun.png" id="1_hnbr4"]
+
+[node name="Handgun" type="Node2D" unique_id=1063920413]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1002042697]
+texture = ExtResource("1_hnbr4")
